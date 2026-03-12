@@ -15,16 +15,16 @@ export default function ServicesHero() {
       </div>
 
       <div className="relative flex min-h-[calc(100vh-132px)] items-center justify-center px-6 py-24 md:px-10 lg:px-16">
-        <div className="mx-auto flex w-full max-w-[980px] flex-col items-center justify-center text-center">
+        <div className="mx-auto flex w-full max-w-[980px] flex-col items-center justify-center gap-y-9 text-center md:gap-y-16 lg:gap-y-8">
           <h1 className="mx-auto max-w-[860px] text-balance text-[clamp(2.5rem,5vw,4.2rem)] leading-[1.1] font-extrabold text-white drop-shadow-[0_6px_24px_rgba(0,0,0,0.28)]">
             Complete HVAC Service Solutions
           </h1>
 
-          <p className="mx-auto mt-8 max-w-[720px] text-balance text-[clamp(1rem,1.8vw,1.35rem)] leading-[1.7] font-medium text-white/92">
+          <p className="mx-auto max-w-[720px] text-balance text-[clamp(1rem,1.8vw,1.35rem)] leading-[1.9] font-medium text-white/92">
             From installation to maintenance, we deliver end-to-end HVAC services for reliable, long-term performance.
           </p>
 
-          <div className="mt-14 flex w-full flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5 sm:justify-center">
+          <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6 sm:justify-center">
             <Link
               to="/contact"
               className="inline-flex w-full max-w-[240px] shrink-0 items-center justify-center gap-2.5 rounded-xl bg-[#0d9bb5] px-6 py-3.5 text-[1.05rem] font-bold text-white shadow-lg transition-all duration-200 hover:bg-[#0b8a9f] hover:-translate-y-0.5 md:text-[1.1rem]"

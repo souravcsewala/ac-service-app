@@ -9,9 +9,9 @@ export default function Services() {
     <div className="page-shell flex w-full flex-col gap-12 md:gap-16 lg:gap-20">
       <ServicesHero />
       <ServicesOverview />
-      <ServicesProcess />
       <ServicesOfferings />
       <WhyChooseUs />
+      <ServicesProcess />
     </div>
   );
 }
