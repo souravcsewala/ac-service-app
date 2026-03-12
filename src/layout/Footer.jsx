@@ -109,16 +109,16 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <h3 className="text-[2rem] leading-none">Newsletter</h3>
-            <p className="mt-5 text-sm leading-7 text-white/72">
-              Sign up to receive updates, latest blogs, expert thoughts, and useful insights directly in your inbox.
+            <p className="mt-5 max-w-[280px] text-sm leading-relaxed text-white/72">
+              Sign up to receive updates, latest blogs, exclusive offers, and useful insights from us.
             </p>
-            <form onSubmit={(event) => event.preventDefault()} className="mt-6 space-y-4">
+            <form onSubmit={(event) => event.preventDefault()} className="mt-6 w-full max-w-[280px] space-y-4">
               <input
                 type="email"
-                placeholder="Your email"
-                className="w-full rounded-[0.9rem] border border-white/24 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/48 outline-none"
+                placeholder="Enter your email"
+                className="w-full min-h-[44px] rounded-[0.9rem] border border-white/24 bg-white/10 px-4 py-3.5 text-sm text-white placeholder:text-white/48 outline-none transition focus:border-white/40"
               />
               <button type="submit" className="primary-btn w-full">
                 Subscribe

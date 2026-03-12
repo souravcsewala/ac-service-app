@@ -42,16 +42,16 @@ export default function Navbar() {
           </div>
         </div>
         <div
-          className="hidden lg:flex items-center justify-end bg-white pl-14 pr-8 gap-8"
+          className="hidden lg:flex items-center justify-end bg-white pl-14 pr-8 gap-8 min-h-12"
           style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 100%, 0 100%)', marginLeft: '-2%' }}
         >
           {topItems.map((item, index) => (
-            <div key={item.label} className="flex items-center gap-2">
-              {index > 0 && <span className="h-4 w-px bg-gray-300 shrink-0 mx-1" />}
+            <div key={item.label} className="flex items-center gap-2 leading-none">
+              {index > 0 && <span className="h-4 w-px bg-gray-300 shrink-0" aria-hidden />}
               <svg className="h-4 w-4 shrink-0 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} />
               </svg>
-              <span className="text-sm font-semibold text-gray-600 whitespace-nowrap">{item.label}</span>
+              <span className="text-sm font-semibold text-gray-600 whitespace-nowrap align-middle">{item.label}</span>
             </div>
           ))}
         </div>
@@ -92,9 +92,8 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* ── Desktop CTAs: Login + Buy Product ── */}
-          <div className="hidden items-center gap-2 lg:flex">
-            {/* Login — outlined */}
+          {/* ── Desktop CTAs: Login + Buy Product (commented out) ── */}
+          {/* <div className="hidden items-center gap-2 lg:flex">
             <Link
               to="/login"
               className="secondary-btn"
@@ -102,7 +101,6 @@ export default function Navbar() {
             >
               Login
             </Link>
-            {/* Buy Product — solid dark teal (matches screenshot exactly) */}
             <Link
               to="/products"
               style={{
@@ -124,7 +122,7 @@ export default function Navbar() {
             >
               Buy Product
             </Link>
-          </div>
+          </div> */}
 
           <button
             type="button"
